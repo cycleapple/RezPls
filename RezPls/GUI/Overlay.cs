@@ -271,13 +271,13 @@ public class Overlay(ActorWatcher actorWatcher) : IDisposable
     private string GetActorName(CastType type, ulong corpse, ulong caster)
     {
         if (type == CastType.Dispel)
-            return Names.GetValueOrDefault(caster, "Unknown");
+            return Names.GetValueOrDefault(caster, "未知");
         if (corpse == caster)
-            return "LIMIT BREAK";
+            return "極限技";
         if (caster == 0)
             return string.Empty;
 
-        return Names.GetValueOrDefault(caster, "Unknown");
+        return Names.GetValueOrDefault(caster, "未知");
     }
 
     private Vector3? GetActorPosition(ulong corpse)

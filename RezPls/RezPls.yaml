@@ -1,11 +1,9 @@
 ﻿name: RezPls
 author: Ottermandias
 description: |-
-  Easy overview about who is currently resurrecting who,
-  who is already resurrected,
-  and who has removable detrimental status effects in the world 
-  as well as in the group or alliance interface.
-punchline: Highlighting of Raises and detrimental status effects.
+  清楚標示目前由誰施放復活、哪些玩家已有復活效果，
+  以及場景、小隊列表與團隊列表中可解除的負面狀態。
+punchline: 標示復活施法與可解除的負面狀態。
 repo_url: https://github.com/cycleapple/RezPls/tree/api13-tw
 tags:
   - Resurrection

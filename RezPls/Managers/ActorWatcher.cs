@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Numerics;
 using Dalamud.Bindings.ImGui;
@@ -92,7 +92,7 @@ public class ActorWatcher : IDisposable
     {
         var     battleChara = (BattleChara*)player.Address;
         ref var cast        = ref *battleChara->GetCastInfo();
-        return cast.ActionType != ActionType.Action
+        return cast.ActionType != (byte)ActionType.Action
             ? ((uint, GameObjectId, byte))(0, 0, 100)
             : (cast.ActionId, cast.TargetId, cast.TotalCastTime > 0 ? (byte)(Math.Round(cast.CurrentCastTime * 100.0 / cast.TotalCastTime)) : (byte)100);
     }
